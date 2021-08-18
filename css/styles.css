@@ -1,0 +1,192 @@
+/**VAR**/
+:root {
+  --main-text-color: #757575;
+  --header-text-color: #212121;
+  --background-color: #2f303a;
+  --light-text-color: #ffffff;
+  --second-color: #2196f3;
+}
+/***Общее**/
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  background-color: #e5e5e5;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/**header css**/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  text-decoration: none;
+}
+.half-logo {
+  color: var(--second-color);
+}
+.nav-head {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--header-text-color);
+}
+
+.nav-head .link {
+  color: var(--header-text-color);
+}
+.post-and-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color);
+}
+.post-and-phone .link {
+  color: var(--main-text-color);
+}
+/***main css**/
+.hero {
+  background: var(--background-color);
+}
+.hero-text {
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+.hero-button {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+  background-color: var(--second-color);
+  cursor: pointer;
+}
+
+.about-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+}
+.about-us-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+.caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+}
+
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--header-text-color);
+}
+.team-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/***footer css**/
+footer {
+  background: var(--background-color);
+}
+
+.left-half-logo-footer {
+  color: var(--second-color);
+}
+.right-half-logo-footer {
+  color: var(--light-text-color);
+}
+.footer-post-and-phone .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-adress .link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--light-text-color);
+}
+
+/***Портфолио**/
+.h1-portfolio {
+  display: none;
+}
+.portfolio-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: var(--header-text-color);
+  cursor: pointer;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-text-color);
+}
+
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--second-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--light-text-color);
+  background-color: var(--second-color);
+}
