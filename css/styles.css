@@ -7,15 +7,36 @@
   --second-color: #2196f3;
 }
 /***Общее**/
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   background-color: #e5e5e5;
 }
+
 main {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .link {
@@ -24,6 +45,10 @@ main {
 
 .list {
   list-style: none;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /**header css**/
@@ -35,6 +60,11 @@ main {
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
+
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 25px;
 }
 .half-logo {
   color: var(--second-color);
@@ -44,6 +74,15 @@ main {
   font-size: 14px;
   line-height: 1.14;
   color: var(--header-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 331px;
+}
+
+.nav-head li:not(:last-child),
+.post-and-phone li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-head .link {
@@ -54,6 +93,9 @@ main {
   font-size: 14px;
   line-height: 1.14;
   color: var(--main-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .post-and-phone .link {
   color: var(--main-text-color);
@@ -61,18 +103,17 @@ main {
 /***main css**/
 .hero {
   background: var(--background-color);
+  text-align: center;
 }
 .hero-text {
-  width: 696px;
-  height: 120px;
-  left: 452px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   color: var(--light-text-color);
-  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-left: 252px;
 }
 .hero-button {
   font-family: Roboto, sans-serif;
@@ -90,6 +131,13 @@ main {
   padding: 10px 32px;
   display: inline-block;
   min-width: 200px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+.about-section {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .about-us {
@@ -99,6 +147,7 @@ main {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-text-color);
+  width: 270px;
 }
 .about-us-text {
   font-weight: 400;
@@ -106,7 +155,9 @@ main {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  width: 270px;
 }
+
 .caption {
   font-weight: 700;
   font-size: 36px;
@@ -114,6 +165,15 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
+
+  margin-bottom: 50px;
+}
+.action-jpeg {
+  margin-bottom: 94px;
+}
+
+.action-jpeg:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
@@ -121,6 +181,7 @@ main {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--header-text-color);
 }
@@ -129,12 +190,30 @@ main {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-text-color);
+}
+.team-list:not(:last-child) {
+  margin-right: 30px;
+}
+.team-introduction {
+  margin-bottom: 94px;
 }
 
 /***footer css**/
 footer {
   background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.lower-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  text-decoration: none;
 }
 
 .left-half-logo-footer {
@@ -160,9 +239,24 @@ footer {
 }
 
 /***Портфолио**/
-.h1-portfolio {
-  display: none;
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
+
+.projects {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects:nth-child(3n) {
+  margin-right: 0;
+}
+
 .portfolio-button {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -170,9 +264,18 @@ footer {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
   background-color: #f5f4fa;
   color: var(--header-text-color);
   cursor: pointer;
+  border-color: transparent;
+}
+.filter-button {
+  justify-content: center;
+  margin-bottom: 34px;
+}
+.filter-button li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .company-name {
