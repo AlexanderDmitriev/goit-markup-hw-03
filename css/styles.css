@@ -17,11 +17,7 @@ body {
   background-color: #e5e5e5;
 }
 
-main {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+/**Небольшой RESET после нормализации*/
 p,
 h1,
 h2,
@@ -32,7 +28,6 @@ h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -46,13 +41,31 @@ ul {
 .list {
   list-style: none;
 }
-.container {
+/**Общий контейнер для элементов макета**/
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.content {
   display: flex;
   flex-wrap: wrap;
 }
 
 /**header css**/
 
+.header .conteiner {
+  display: flex;
+  align-items: center;
+}
+.heading {
+  display: flex;
+}
+.header-link {
+  display: block;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -60,24 +73,28 @@ ul {
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
-
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   margin-left: 25px;
 }
 .half-logo {
   color: var(--second-color);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 .nav-head {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--header-text-color);
-
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 331px;
+
+  display: flex;
 }
 
 .nav-head li:not(:last-child),
@@ -94,16 +111,26 @@ ul {
   line-height: 1.14;
   color: var(--main-text-color);
 
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: auto;
+  margin-right: 40px;
 }
 .post-and-phone .link {
   color: var(--main-text-color);
 }
+
 /***main css**/
+
+/**Герой**/
 .hero {
   background: var(--background-color);
+  flex-grow: 1;
   text-align: center;
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-left: 252px;
 }
 .hero-text {
   font-weight: 900;
@@ -111,9 +138,6 @@ ul {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--light-text-color);
-  padding-top: 200px;
-  padding-right: 252px;
-  padding-left: 252px;
 }
 .hero-button {
   font-family: Roboto, sans-serif;
@@ -134,10 +158,14 @@ ul {
   margin-top: 30px;
   margin-bottom: 200px;
 }
+/************Секция "О нас"*******************/
 .about-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+}
+.about {
+  display: flex;
 }
 
 .about-us {
@@ -147,8 +175,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-text-color);
-  width: 270px;
 }
+
 .about-us-text {
   font-weight: 400;
   font-size: 14px;
@@ -156,6 +184,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   width: 270px;
+}
+
+.about-topic:not(:last-child) {
+  margin-right: 30px;
 }
 
 .caption {
@@ -246,7 +278,6 @@ footer {
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
 .projects {

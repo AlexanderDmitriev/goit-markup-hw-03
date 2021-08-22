@@ -18,42 +18,48 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container">
-      <nav class="container">
-        <a href="./index.html" class="logo" lang="en">
-          <span class="half-logo">Web</span>Studio
-        </a>
-        <!---Лого сайта-->
-        <ul class="list nav-head container">
-          <!---Меню в хедере-->
+    <header class="header">
+      <div class="container heading">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo" lang="en">
+            <span class="half-logo">Web</span>Studio
+          </a>
+          <!---Лого сайта-->
+          <ul class="list nav-head">
+            <!---Меню в хедере-->
+            <li>
+              <a href="" class="link header-link"> Студия </a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link header-link">
+                Портфолио
+              </a>
+            </li>
+            <li>
+              <a href="" class="link header-link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list post-and-phone">
+          <!--Почта и телефон-->
           <li>
-            <a href="" class="link"> Студия </a>
+            <a href="mailto:info@devstudio.com" class="link header-link"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="./portfolio.html" class="link"> Портфолио </a>
-          </li>
-          <li>
-            <a href="" class="link"> Контакты </a>
+            <a href="tel:+380961111111" class="link header-link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="list post-and-phone container">
-        <!--Почта и телефон-->
-        <li>
-          <a href="mailto:info@devstudio.com" class="link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <h1 class="visually-hidden">Портфолио</h1>
       <section>
-        <ul class="list container filter-button">
+        <ul class="list content filter-button">
           <li>
             <button type="button" class="portfolio-button">Все</button>
           </li>
@@ -71,7 +77,7 @@
           </li>
         </ul>
 
-        <ul class="list container">
+        <ul class="list content">
           <li class="projects">
             <img
               src="./Images/portfolio-1.jpg"
