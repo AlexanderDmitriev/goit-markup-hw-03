@@ -301,6 +301,10 @@ footer {
   /*flex-basis: calc(100% / 3-30px);*/
   flex-basis: calc((100%-90px) / 3);
   padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border: 1px solid #eeeeee;
 }
 
 .projects:nth-child(3n) {
@@ -334,7 +338,10 @@ footer {
 
 .info-project {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  /*padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin-right: 24px;*/
 }
 .company-name {
   font-weight: 700;
