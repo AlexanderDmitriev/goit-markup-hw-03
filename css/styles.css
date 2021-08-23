@@ -129,6 +129,7 @@ ul {
   flex-grow: 1;
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 280px;
 }
 .hero-text {
   font-weight: 900;
@@ -154,13 +155,11 @@ ul {
   display: inline-block;
   min-width: 200px;
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 /************Секция "О нас"*******************/
 .about-section {
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 115px;
   display: flex;
 }
 .about {
@@ -174,6 +173,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--header-text-color);
+  margin-bottom: 10px;
 }
 
 .about-us-text {
@@ -190,7 +190,7 @@ ul {
 }
 /***********************Чем мы занимаемся**************************************/
 .our-work {
-  padding-bottom: 188px;
+  padding-bottom: 94px;
 }
 .caption {
   font-weight: 700;
@@ -199,7 +199,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .action-jpeg:not(:last-child) {
@@ -214,6 +214,11 @@ ul {
   text-align: center;
 
   color: var(--header-text-color);
+  padding-bottom: 10px;
+}
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-role {
   font-weight: 400;
@@ -228,6 +233,7 @@ ul {
 }
 .team-introduction {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 /***footer css**/
@@ -252,12 +258,21 @@ footer {
 .right-half-logo-footer {
   color: var(--light-text-color);
 }
+.footer-post-and-phone:not(:last-child) {
+  padding-bottom: 9px;
+}
+.footer-adress {
+  padding-bottom: 9px;
+}
 .footer-post-and-phone .link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.address-ccs {
+  padding-top: 20px;
 }
 
 .footer-adress .link {
@@ -278,16 +293,21 @@ footer {
   margin: -1px;
 }
 .port {
+  border-top: 1px solid #ececec;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .projects {
-  flex-basis: calc(100% / 3-30px);
-  margin-left: 30px;
+  /*flex-basis: calc(100% / 3-30px);*/
+  flex-basis: calc((100%-90px) / 3);
+  padding-bottom: 30px;
 }
 
 .projects:nth-child(3n) {
   margin-right: -30px;
+}
+.projects:nth-last-child(-n + 3) {
+  padding-bottom: 0;
 }
 
 .portfolio-button {
@@ -302,6 +322,7 @@ footer {
   color: var(--header-text-color);
   cursor: pointer;
   border-color: transparent;
+  padding: 6px 22px;
 }
 .filter-button {
   justify-content: center;
@@ -311,12 +332,17 @@ footer {
   margin-right: 8px;
 }
 
+.info-project {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
 .company-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-text-color);
+  margin-bottom: 4px;
 }
 
 .project-type {
