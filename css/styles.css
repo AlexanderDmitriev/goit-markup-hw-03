@@ -292,6 +292,9 @@ footer {
   height: 1px;
   margin: -1px;
 }
+.content-projects {
+  padding-top: 22px;
+}
 .port {
   border-top: 1px solid #ececec;
   padding-top: 94px;
@@ -299,10 +302,9 @@ footer {
 }
 .projects {
   /*flex-basis: calc(100% / 3-30px);*/
-  flex-basis: calc((100%-90px) / 3);
-  padding-bottom: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /*flex-basis: calc((100%-90px) / 3);*/
+  margin-right: 30px;
+  margin-bottom: 30px;
 
   border: 1px solid #eeeeee;
 }
